@@ -1,0 +1,301 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<title>landing-page</title>
+		<link rel="preconnect" href="https://fonts.googleapis.com">
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="">
+		<link href="https://fonts.googleapis.com/css2?family=Overpass:wght@200;300&amp;display=swap" rel="stylesheet">
+		<link rel="preconnect" href="https://fonts.googleapis.com">
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="">
+		<link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@300&amp;family=Overpass:wght@200;300&amp;display=swap" rel="stylesheet">
+		<link rel="stylesheet" href="style.css">
+	</head>
+	<body>
+		
+		<!-- nav bar -->
+		<nav class="relative container mx-auto p-6">
+			
+			<!-- Flex container -->
+			<div class="flex items-center justify-between">
+				
+				<!-- Logo -->
+				<div class="pt-2">
+					<h1 class="#logo font-semibold text-2xl">team.flow</h1>
+				</div>
+				
+				<!-- Menu Items -->
+				<div class="hidden text-xl space-x-6 md:flex">
+					<a href="#">How it works</a>
+					<a href="#">Products</a>
+					<a href="#">Pricing</a>
+					<a href="#">Resources</a>
+				</div>
+				
+				<!-- Button -->
+				<div class="hidden text-lg lg:flex">
+					<h1 class="p-2">Log in</h1>
+					<button class="inline bg-purple-100 text-purple-700 rounded-md p-2">Get Started Free</button>
+				</div>
+				
+				<!-- Hamburger Icon -->
+				<button id="menu-btn" class="block hamburger md:hidden focus:outline-none">
+					<span class="hamburger-top"></span>
+					<span class="hamburger-middle"></span>
+					<span class="hamburger-bottom"></span>
+				</button>
+			</div>
+			
+			<!-- Mobile Menu -->
+			<div class="md:hidden">
+				<div id="menu" class=" absolute flex-col items-center hidden self-end text-xl py-8 mt-10 space-y-6 font-bold bg-white sm:w-auto sm:self-center left-6 right-6 drop-shadow-md">
+					<a href="#">How it works</a>
+					<a href="#">Products</a>
+					<a href="#">Pricing</a>
+					<a href="#">Resources</a>
+					<h1 class="p-2">Log in</h1>
+					<button class="inline bg-purple-100 text-purple-700 rounded-md p-2">Get Started Free</button>
+				</div>
+			</div>
+		</nav>
+		
+		<!-- hero-section -->
+		<section class="container max-w-full mx-auto text-center p-6">
+			
+			<!-- offer-tag -->
+			<p class=" inline bg-slate-50 rounded-xl text-base cursor-pointer ">
+				<span class="bg-LightGreen rounded-xl px-3 text-base">Save 90%</span>
+				Get Account of $59 &gt;</p>
+			<div class="container flex flex-col mx-auto items-center p-3 text-center">
+				<h1 class="text-3xl text-Palegray font-bold mt-7 m-3 lg:text-6xl">
+					Manage the team<br>everyone wants to be on
+				</h1>
+				<p class="text-base text-Palegray font-medium pb-2 lg:text-lg">
+					Simple platform that let's you master what great managers do best,
+					<br>as develop trust, collaborate and drive team performance.
+				</p>
+				<form id="myForm" class="container m-4 flex flex-col justify-center gap-2 max-w-full  lg:flex-row">
+					<input type="email" id="emailInput" name="email" placeholder="Name@yourcompany.com" autocomplete="off" class="block border border-slate-200 p-3 rounded-lg   lg:inline-block" required="">
+					<button type="submit" class="max-w-full bg-purple-500 rounded-lg text-white py-3  px-10 lg:rounded-r-lg">
+						Try it free
+					</button>
+				</form>
+				<img src="images/Graph 2 1.jpg" alt="hero-img" class="my-3 mx-auto shadow-xl">
+				<p class="text-Palegray mt-3 text-sm">TRUSTED BY OVER
+					<span class="font-semibold">10,000+</span>WORLD'S BEST TEAMS</p>
+				<div class="flex justify-between items-center h-max p-2">
+					<img src="images/google-2015a 1.jpg" alt="" class="max-w-full scale-75">
+					<img src="images/airbnb 1.jpg" alt="" class="max-w-full scale-75">
+					<img src="images/Group.jpg" alt="" class="max-w-full h-full scale-75">
+					<img src="images/hubspot 1.jpg" alt="" class="max-w-full h-full scale-75">
+					<img src="images/slack-2 1.jpg" class="hidden md:block">
+				</div>
+			</div>
+		</section>
+		
+		<!--uses-->
+		<section class="container p-6 mx-auto">
+			<div class="container flex flex-col items-center text-center lg:flex-row bg-LightPurple">
+				<img src="images/Group 25.jpg" alt="" class="my-6 mx-auto p-5 shadow-2xl">
+				<div class="m-6">
+					<div class="border p-4 hover:border-b-8 hover:border-b-purple-600">
+						<h1 class="text-xl font-bold text-PaleBlack">Survey your team</h1>
+						<p class="text-lg font-semibold text-Palegray">Powerful qustions that
+                        get to the heart<br>of how team members real feel.</p>
+					</div>
+					<div class="border p-4  hover:border-b-8 hover:border-b-purple-600">
+						<h1 class="text-lg font-bold text-PaleBlack">Resolve issues quickly</h1>
+						<p class="text-base font-semibold text-Palegray">Anonymous messaging that 
+                            connects<br>managers and employees.</p>
+					</div>
+					<div class="border p-4  hover:border-b-8 hover:border-b-purple-600">
+						<h1 class="text-lg font-bold text-PaleBlack">Plan your 1-on-1s</h1>
+						<p class="text-base font-semibold text-Palegray">Plan meetings together and 
+                         give a stake<br>employees and teams.</p>
+					</div>
+					<div class="border p-4  hover:border-b-8 hover:border-b-purple-600">
+						<h1 class="text-lg font-bold text-PaleBlack">Track your progress</h1>
+						<p class="text-base font-semibold text-Palegray">Easy to read reports and sharable<br>results help managers and teams.</p>
+					</div>
+				</div>
+			</div>
+		</section>
+        <!-- features -->
+		<section class="container mx-auto p-6">
+			<h1 class="text-lg text-center font-bold text-PaleBlack">Make your work easier</h1>
+			<div class="container mt-2 justify-center items-center lg:flex lg:flex-wrap">
+				<div class="text-center lg:w-1/3">
+					<img src="/images/Group 21.jpg" alt="" class="mx-auto">
+					<h1 class="text-lg font-bold text-PaleBlack">Team Surveys &amp; Reports</h1>
+					<p class="m-2 text-base font-semibold text-Palegray">Short, Anonymous surveys track your<br>team's needs weekly so you can focus.</p>
+				</div>
+				<div class="text-center lg:w-1/3">
+					<img src="/images/Group 19.jpg" alt="" class="mx-auto">
+					<h1 class="text-lg font-bold text-PaleBlack">collaborative 1:1</h1>
+					<p class="m-2 text-base font-semibold text-Palegray">Build relationships by planning<br>1-on-1s and start meetings.</p>
+				</div>
+				<div class="text-center lg:w-1/3">
+					<img src="/images/Group 20.jpg" alt="" class="mx-auto">
+					<h1 class="text-lg font-bold text-PaleBlack">learning Center</h1>
+					<p class="m-2 text-base font-semibold text-Palegray">quickly get solutions tailored yo your<br>personal challenges from the manager.</p>
+				</div>
+				<div class="text-center lg:w-1/3">
+					<img src="/images/Group 22.jpg" alt="" class="mx-auto">
+					<h1 class="text-lg font-bold text-PaleBlack">Team Surveys &amp; Reports</h1>
+					<p class="m-2 text-base font-semibold text-Palegray">Short, Anonymous surveys track your<br>team's needs weekly so you can focus.</p>
+				</div>
+				<div class="text-center lg:w-1/3">
+					<img src="/images/Group 23.jpg" alt="" class="mx-auto">
+					<h1 class="text-lg font-bold text-PaleBlack">Team Surveys &amp; Reports</h1>
+					<p class="m-2 text-base font-semibold text-Palegray">Short, Anonymous surveys track your<br>team's needs weekly so you can focus.</p>
+				</div>
+				<div class="text-center lg:w-1/3">
+					<img src="/images/Group 24.jpg" alt="" class="mx-auto">
+					<h1 class="text-lg font-bold text-PaleBlack">Team Surveys &amp; Reports</h1>
+					<p class="m-2 text-base font-semibold text-Palegray">Short, Anonymous surveys track your<br>team's needs weekly so you can focus.</p>
+				</div>
+			</div>
+		</section>
+        <!-- graph and get started -->
+		<section class="container mx-auto">
+			<div class="container text-center p-6 lg:flex lg:flex-row-reverse bg-LightPurple">
+				<img src="images/Group 26.jpg" alt="" class="my-3 mx-auto shadow-xl scale-75 lg:scale-100">
+				<div class="m-auto">
+					<h1 class="text-2xl font-bold text-PaleBlack">We work how you<br>work everyday</h1>
+					<p class="m-4 font-semibold text-Palegray">Since the easiest things to use actually<br>get used, we adapts to the way your team<br>
+						works- not the other way around.</p>
+					<button class="inline w-3/4 text-purple-100 bg-purple-700 rounded-md p-2">Get started free</button>
+				</div>
+			</div>
+		</section>
+        <!-- testimonials -->
+		<section class="container mx-auto">
+			<div class="container flex flex-col justify-center items-center text-center">
+				<h1 class="text-2xl mt-10 font-bold text-center text-PaleBlack">Why customers love<br>
+					working with us</h1>
+				<div class="container text-xl flex flex-col text-center" id="testimonial-carousel">
+					<div class="testimonial-item flex flex-col justify-center active">
+						<p class=" font-semibold text-Palegray">it's amazing what has helped me learn<br>about my team. I don't worry about<br>
+							blindspots anymore, and 1-on-1s have<br>
+							never been more productive. the team<br>
+							loves it.</p>
+						<img src="images/Ellipse 5.jpg" alt="" class="mx-auto">
+						<h1 class="text-lg font-semibold text-PaleBlack">Jorge Robertson</h1>
+						<p class="font-semibold text-Palegray">CS at Google</p>
+					</div>
+					<div class="testimonial-item flex flex-col justify-center">
+						<p class="  font-semibold text-Palegray">it's amazing what has helped me learn<br>about my team. I don't worry about<br>
+							blindspots anymore, and 1-on-1s have<br>
+							never been more productive. the team<br>
+							loves it.</p>
+						<img src="images/Ellipse 6.jpg" alt="" class="mx-auto">
+						<h1 class="text-lg font-semibold text-PaleBlack">Francisco Bell</h1>
+						<p class="font-semibold text-Palegray">Designer at microsoft</p>
+					</div>
+					<div class="testimonial-item flex flex-col justify-center">
+						<p class="  font-semibold text-Palegray">
+							it's amazing what has helped me learn<br>
+							about my team. I don't worry about<br>
+							blindspots anymore, and 1-on-1s have<br>
+							never been more productive. the team<br>
+							loves it.</p>
+						<img src="images/Ellipse 7.jpg" alt="" class="mx-auto">
+						<h1 class="text-lg font-semibold text-PaleBlack">Beth Fox</h1>
+						<p class="font-semibold text-Palegray">Developer at Airbnb</p>
+					</div>
+				</div>
+				<div class=" p-5 bg-Purple rounded-lg flex flex-col  items-center lg:flex-row">
+					<h1 class="text-2xl text-center lg:text-3xl w-3/4 text-white font-bold">84% of employees who use
+						<br class="hidden lg:inline-block">trust their direct manager</h1>
+					<div class="flex flex-col justify-center gap-4 w-3/4 p-5 mx-auto lg:flex-row lg:gap-8">
+						<img src="images/google-play-badge 1.jpg" alt="" class="rounded-lg">
+						<img src="images/Group-1.jpg" alt="" class="rounded-lg">
+					</div>
+				</div>
+			</div>
+		</section>
+		<footer class="container bg-PaleBlack mt-24 max-w-full">
+			<div class="container flex flex-col justify-evenly items-start p-10 text-white text-lg text-center lg:flex-row" >
+				<div class="text-center">
+				<h1 class="ml-5 text-xl font-semibold dropdown1">Company <svg
+					xmlns="http://www.w3.org/2000/svg"
+					viewBox="0 0 20 20"
+					fill="currentColor"
+					class="h-5 w-5 inline lg:hidden">
+					<path
+					  fill-rule="evenodd"
+					  d="M5.23 7.21a.75.75 0 011.06.02L10 11.168l3.71-3.938a.75.75
+					   0 111.08 1.04l-4.25 4.5a.75.75 0 01-1.08 0l-4.25-4.5a.75.75 0 01.02-1.06z"
+					  clip-rule="evenodd" />
+				  </svg>
+				</h1>
+				<li class="m-5 hidden lg:block dropmenu1">
+					<ul><a href="#" class="">About us</a></ul>
+					<ul><a href="#">Blog</a></ul>
+					<ul><a href="#">Careers</a></ul>
+					<ul><a href="#">cantact us</a></ul>
+				</li>
+			</div>
+			<div>
+				<h1 class="ml-5 text-xl font-semibold dropdown2">Support<svg
+					xmlns="http://www.w3.org/2000/svg"
+					viewBox="0 0 20 20"
+					fill="currentColor"
+					class="h-5 w-5 inline lg:hidden">
+					<path
+					  fill-rule="evenodd"
+					  d="M5.23 7.21a.75.75 0 011.06.02L10 11.168l3.71-3.938a.75.75
+					   0 111.08 1.04l-4.25 4.5a.75.75 0 01-1.08 0l-4.25-4.5a.75.75 0 01.02-1.06z"
+					  clip-rule="evenodd" />
+				  </svg>
+				</h1>
+				<li class="m-5 hidden mx-auto lg:block dropmenu2">
+					<ul><a href="#">Help center</a></ul>
+					<ul><a href="#">Safety center</a></ul>
+					<ul><a href="#">Community</a></ul>
+				</li>
+			</div>
+			<div>
+				<h1 class="ml-5 text-xl font-semibold dropdown3">Legal <svg
+					xmlns="http://www.w3.org/2000/svg"
+					viewBox="0 0 20 20"
+					fill="currentColor"
+					class="h-5 w-5 inline lg:hidden">
+					<path
+					  fill-rule="evenodd"
+					  d="M5.23 7.21a.75.75 0 011.06.02L10 11.168l3.71-3.938a.75.75
+					   0 111.08 1.04l-4.25 4.5a.75.75 0 01-1.08 0l-4.25-4.5a.75.75 0 01.02-1.06z"
+					  clip-rule="evenodd" />
+				  </svg></h1>
+				<li class="m-5 hidden lg:block dropmenu3">
+					<ul><a href="#">Cookies Policy</a></ul>
+					<ul><a href="#">Privacy Policy</a></ul>
+					<ul><a href="#">terms of service</a></ul>
+				</li>
+			</div>
+			 <div class="">
+				<h1 class="text-xl font-semibold">Install App</h1>
+				<div class="flex flex-col justify-start gap-3 m-5">
+				<img src="images/Layer 2.jpg" alt="" class="">
+				<img src="images/Group-2.jpg" alt="" class="">
+			</div>
+			 </div>
+			</div>
+			<hr class=" border-Palegray">
+			<div class="lg:flex justify-between mt-10 pb-10 hidden">
+			<p class="text-white ml-8">&copy; 2020 - All rights reserved.</p>
+			<div class="mx-16 flex gap-4">
+			<ion-icon name="logo-instagram" class="text-white  bg-PaleBlack scale-150"></ion-icon>
+			<ion-icon name="logo-dribbble" class="text-white bg-PaleBlack scale-150"></ion-icon>
+			<ion-icon name="logo-twitter" class="text-white bg-PaleBlack scale-150"></ion-icon>
+			<ion-icon name="logo-youtube" class="text-white bg-PaleBlack scale-150"></ion-icon>
+		</div>
+		</div>
+		<p class="text-white text-center">developed by <a class="underline uppercase" target="_blank" href="https://www.github.com/saif1803/">Saif</a></p>
+		</footer>
+		<script src="./main.js"></script>
+		<script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+<script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+	</body>
+</html>
