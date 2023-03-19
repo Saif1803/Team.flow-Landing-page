@@ -1,2 +1,2 @@
 # Landing-page-DCSxGDSC
-project for second round shortlisting
+project for second round
