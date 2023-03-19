@@ -1,6 +1,6 @@
 # Landing-page-DCSxGDSC
 project for second round
 
- tailwindCSS - styling
- ionIcons - footer icons
+ tailwindCSS - styling <br>
+ ionIcons - footer icons<br>
  JavaScript - hamburger menu, testimonial transistions
