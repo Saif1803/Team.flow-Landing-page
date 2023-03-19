@@ -55,6 +55,18 @@ function nextTestimonialItem() {
 }
 
 setInterval(nextTestimonialItem, 3000);
+// benefits-button
+
+const benefitsButton = document.getElementById("Benefits-btn");
+const benefits = document.querySelectorAll(".benefit");
+
+benefitsButton.addEventListener("click", () => {
+  benefitsButton.classList.add("hidden");
+  benefits.forEach(benefit => {
+    benefit.classList.remove("hidden");
+    benefit.classList.add("block");
+  });
+});
 
 // footer dropdowns
 
