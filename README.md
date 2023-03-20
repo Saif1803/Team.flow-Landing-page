@@ -2,5 +2,5 @@
 project for second round
 
  tailwindCSS - styling <br>
- ionIcons - footer icons<br>
- JavaScript - hamburger menu, testimonial transistions
+ ionIcons - footer icons <br>
+ JavaScript - hamburger menu, testimonial transitions
